@@ -9,7 +9,8 @@ import SwiftUI
 
 struct HealthTimerSetupView: View {
     @State var second: Int
-    let action: () -> Void
+    let cancel: () -> Void
+    let done: () -> Void
     
     func startTimer() {
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
@@ -27,24 +28,26 @@ struct HealthTimerSetupView: View {
     var body: some View {
         VStack {
             if second > 0 {
-                Text("Remaining").onAppear() { startTimer() }
+                Text("").onAppear() { startTimer() }
                 Text("\(second)").bold().font(.system(size: 90))
                 Text(" sec.")
-                Button("Cancel.") {
-                    action()
-                }.bold().font(.system(size: 20)).foregroundColor(.red)
+                
+//                 to-do
+//                Button("Cancel.") { cancel() }.bold().font(.system(size: 20)).foregroundColor(.red)
             } else {
-                Button("Done !") {
-                    action()
-                }.bold().font(.system(size: 50)).foregroundColor(.white)
+//                 to-do
+//                Button("Done !") { done() }.bold().font(.system(size: 50)).foregroundColor(.white)
             }
         }
     }
 }
 
 struct HealthTimerSetupView_Previews: PreviewProvider {
+    @State static var isPresentedPreview = false
     static var previews: some View {
-        HealthTimerSetupView(second: 3, action: { })
+//         to-do
+//        HealthTimerSetupView(second: 3, isPresented: $isPresentedPreview, cancel: { }, done: { })
+        HealthTimerSetupView(second: 3, cancel: { }, done: { })
     }
 }
 

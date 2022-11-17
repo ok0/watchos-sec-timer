@@ -8,9 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isPresented = false
-    @State private var path: [TimeModel] = []
-    
     let timeModels: [TimeModel] = [
         TimeModel(second: 60),
         TimeModel(second: 50),
@@ -27,30 +24,13 @@ struct ContentView: View {
                         timeModel.name,
                         destination: HealthTimerSetupView(
                             second: timeModel.second,
-                            action: { self.isPresented = false }
+                            cancel: {  }, // to-do
+                            done: {  } // to-do
                         )
                     )
                 }
             }
         }
-        
-        NavigationStack {
-            List {
-                ForEach(timeModels) { timeModel in
-                    NavigationLink(timeModel.name, destination: HealthTimerSetupView(second: timeModel.second, action: { }))
-                }
-            }
-        }
-        
-//        NavigationStack {
-//            List {
-//                ForEach(timeModels) { timeModel in
-//                    NavigationLink(destination: HealthTimerSetupView(second: timeModel.second)) {
-//                        HealthTimerCellView(timeModel: timeModel)
-//                    }
-//                }
-//            }
-//        }
     }
 }
 
