@@ -9,13 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     let timeModels: [TimeModel] = [
-        TimeModel(second: 60),
         TimeModel(second: 55),
-        TimeModel(second: 50),
+        TimeModel(second: 90),
         TimeModel(second: 30),
-        TimeModel(second: 10),
-        TimeModel(second: 5)
+        TimeModel(second: 3)
     ]
+    var didPrefix = "You Did : "
+    @State private var did: Int8 = 0
     
     init() {
         SessionExtend.shared.startSession()
@@ -23,16 +23,21 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
+            Button(
+                "\(didPrefix) \(did) !"
+            ) { did = 0 }.foregroundColor(.green)
+            
             List {
                 ForEach(timeModels) { timeModel in
                     NavigationLink(
-                        timeModel.name,
                         destination: HealthTimerSetupView(
                             second: timeModel.second,
-                            cancel: {  }, // to-do
-                            done: {  } // to-do
+                            didInContentView: $did,
+                            done: { did = did + 1 } // todo
                         )
-                    )
+                    ) {
+                        HealthTimerCellView(timeModel: timeModel)
+                    }
                 }
             }
         }

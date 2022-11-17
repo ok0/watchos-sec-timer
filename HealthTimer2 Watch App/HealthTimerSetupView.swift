@@ -8,22 +8,28 @@
 import SwiftUI
 
 struct HealthTimerSetupView: View {
-    @State var second: Int
-    let cancel: () -> Void
+    @State var second: Int8
+    @Binding var didInContentView: Int8
     let done: () -> Void
     
     var body: some View {
         VStack {
             if second > 0 {
-                Text("").onAppear() { startTimer() }
-                Text("\(second)").bold().font(.system(size: 90)).foregroundColor(.red)
+                Text("")
+                    .onAppear() { startTimer() }
+                Text("\(second)")
+                    .bold()
+                    .font(.system(size: 90))
+                    .foregroundColor(.red)
                 Text(" sec.")
-//                 to-do
-//                Button("Cancel.") { cancel() }.bold().font(.system(size: 20)).foregroundColor(.red)
             } else {
-//                 to-do
-//                Button("Done !") { done() }.bold().font(.system(size: 50)).foregroundColor(.white)
-                Text("Done !").bold().font(.system(size: 50)).foregroundColor(.white)
+                Text("Done !")
+                    .onAppear() {
+                        done() // todo
+                    }
+                    .bold()
+                    .font(.system(size: 50))
+                    .foregroundColor(.white)
             }
         }
     }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DC82A83F2925EC3F0084CBB4 /* WatchKit.framework in Sources */ = {isa = PBXBuildFile; fileRef = DC82A83A2925EBFB0084CBB4 /* WatchKit.framework */; };
 		DC82A845292600C00084CBB4 /* SessionExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82A844292600C00084CBB4 /* SessionExtend.swift */; };
+		DC82A84B292621470084CBB4 /* AbstractModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82A84A292621470084CBB4 /* AbstractModel.swift */; };
 		DCF7CEB329251374006FD0DD /* HealthTimer Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DCF7CEB229251374006FD0DD /* HealthTimer Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DCF7CEB829251374006FD0DD /* HealthTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEB729251374006FD0DD /* HealthTimerApp.swift */; };
 		DCF7CEBA29251374006FD0DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEB929251374006FD0DD /* ContentView.swift */; };
@@ -66,6 +67,7 @@
 		DC82A8412925F0580084CBB4 /* HealthTimer Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HealthTimer Watch App.entitlements"; sourceTree = "<group>"; };
 		DC82A8422925F0620084CBB4 /* HealthTimer-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "HealthTimer-Watch-App-Info.plist"; sourceTree = "<group>"; };
 		DC82A844292600C00084CBB4 /* SessionExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionExtend.swift; sourceTree = "<group>"; };
+		DC82A84A292621470084CBB4 /* AbstractModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractModel.swift; sourceTree = "<group>"; };
 		DCF7CEAC29251374006FD0DD /* HealthTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF7CEB229251374006FD0DD /* HealthTimer Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthTimer Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF7CEB729251374006FD0DD /* HealthTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimerApp.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				DCF7CEE52925139F006FD0DD /* TimeModel.swift */,
+				DC82A84A292621470084CBB4 /* AbstractModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				DCF7CEE92925141C006FD0DD /* HealthTimerCellView.swift in Sources */,
 				DCF7CEED292519B2006FD0DD /* HealthTimerSetupView.swift in Sources */,
 				DCF7CEB829251374006FD0DD /* HealthTimerApp.swift in Sources */,
+				DC82A84B292621470084CBB4 /* AbstractModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
