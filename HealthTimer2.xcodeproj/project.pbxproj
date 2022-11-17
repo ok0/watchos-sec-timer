@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC82A83F2925EC3F0084CBB4 /* WatchKit.framework in Sources */ = {isa = PBXBuildFile; fileRef = DC82A83A2925EBFB0084CBB4 /* WatchKit.framework */; };
+		DC82A845292600C00084CBB4 /* SessionExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82A844292600C00084CBB4 /* SessionExtend.swift */; };
 		DCF7CEB329251374006FD0DD /* HealthTimer Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DCF7CEB229251374006FD0DD /* HealthTimer Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DCF7CEB829251374006FD0DD /* HealthTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEB729251374006FD0DD /* HealthTimerApp.swift */; };
 		DCF7CEBA29251374006FD0DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEB929251374006FD0DD /* ContentView.swift */; };
@@ -60,6 +62,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC82A83A2925EBFB0084CBB4 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.0.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
+		DC82A8412925F0580084CBB4 /* HealthTimer Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HealthTimer Watch App.entitlements"; sourceTree = "<group>"; };
+		DC82A8422925F0620084CBB4 /* HealthTimer-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "HealthTimer-Watch-App-Info.plist"; sourceTree = "<group>"; };
+		DC82A844292600C00084CBB4 /* SessionExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionExtend.swift; sourceTree = "<group>"; };
 		DCF7CEAC29251374006FD0DD /* HealthTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF7CEB229251374006FD0DD /* HealthTimer Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthTimer Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF7CEB729251374006FD0DD /* HealthTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimerApp.swift; sourceTree = "<group>"; };
@@ -102,13 +108,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC82A8392925EBFB0084CBB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC82A83A2925EBFB0084CBB4 /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC82A8432926009C0084CBB4 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				DC82A844292600C00084CBB4 /* SessionExtend.swift */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		DCF7CEA529251373006FD0DD = {
 			isa = PBXGroup;
 			children = (
+				DC82A8422925F0620084CBB4 /* HealthTimer-Watch-App-Info.plist */,
+				DC82A8412925F0580084CBB4 /* HealthTimer Watch App.entitlements */,
 				DCF7CEB629251374006FD0DD /* HealthTimer2 Watch App */,
 				DCF7CEC729251376006FD0DD /* HealthTimer2 Watch AppTests */,
 				DCF7CED129251376006FD0DD /* HealthTimer2 Watch AppUITests */,
 				DCF7CEAD29251374006FD0DD /* Products */,
+				DC82A8392925EBFB0084CBB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +151,7 @@
 		DCF7CEB629251374006FD0DD /* HealthTimer2 Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				DC82A8432926009C0084CBB4 /* lib */,
 				DCF7CEE7292513F6006FD0DD /* model */,
 				DCF7CEB729251374006FD0DD /* HealthTimerApp.swift */,
 				DCF7CEE82925141C006FD0DD /* HealthTimerCellView.swift */,
@@ -329,7 +355,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC82A83F2925EC3F0084CBB4 /* WatchKit.framework in Sources */,
 				DCF7CEBA29251374006FD0DD /* ContentView.swift in Sources */,
+				DC82A845292600C00084CBB4 /* SessionExtend.swift in Sources */,
 				DCF7CEEB292515B9006FD0DD /* HealthTimerCellView_Previews.swift in Sources */,
 				DCF7CEE62925139F006FD0DD /* TimeModel.swift in Sources */,
 				DCF7CEE92925141C006FD0DD /* HealthTimerCellView.swift in Sources */,
@@ -490,12 +518,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HealthTimer Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HealthTimer2 Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = AF3TFU2C7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HealthTimer-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = HealthTimer2;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -520,12 +550,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HealthTimer Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HealthTimer2 Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = AF3TFU2C7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HealthTimer-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = HealthTimer2;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -550,6 +582,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AF3TFU2C7A;
@@ -557,6 +590,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jhyoon.HealthTimer2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 			};
@@ -566,6 +600,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AF3TFU2C7A;
@@ -573,6 +608,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jhyoon.HealthTimer2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;

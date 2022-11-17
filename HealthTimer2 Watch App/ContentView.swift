@@ -10,11 +10,16 @@ import SwiftUI
 struct ContentView: View {
     let timeModels: [TimeModel] = [
         TimeModel(second: 60),
+        TimeModel(second: 55),
         TimeModel(second: 50),
         TimeModel(second: 30),
         TimeModel(second: 10),
         TimeModel(second: 5)
     ]
+    
+    init() {
+        SessionExtend.shared.startSession()
+    }
     
     var body: some View {
         NavigationStack {
