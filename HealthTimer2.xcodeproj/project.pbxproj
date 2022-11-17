@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCF7CEB329251374006FD0DD /* HealthTimer Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DCF7CEB229251374006FD0DD /* HealthTimer Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DCF7CEB829251374006FD0DD /* HealthTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEB729251374006FD0DD /* HealthTimerApp.swift */; };
+		DCF7CEBA29251374006FD0DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEB929251374006FD0DD /* ContentView.swift */; };
+		DCF7CEBC29251376006FD0DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF7CEBB29251376006FD0DD /* Assets.xcassets */; };
+		DCF7CEBF29251376006FD0DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF7CEBE29251376006FD0DD /* Preview Assets.xcassets */; };
+		DCF7CEC929251376006FD0DD /* HealthTimer2_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEC829251376006FD0DD /* HealthTimer2_Watch_AppTests.swift */; };
+		DCF7CED329251376006FD0DD /* HealthTimer2_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CED229251376006FD0DD /* HealthTimer2_Watch_AppUITests.swift */; };
+		DCF7CED529251376006FD0DD /* HealthTimer2_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CED429251376006FD0DD /* HealthTimer2_Watch_AppUITestsLaunchTests.swift */; };
+		DCF7CEE62925139F006FD0DD /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEE52925139F006FD0DD /* TimeModel.swift */; };
+		DCF7CEE92925141C006FD0DD /* HealthTimerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEE82925141C006FD0DD /* HealthTimerCellView.swift */; };
+		DCF7CEEB292515B9006FD0DD /* HealthTimerCellView_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEEA292515B9006FD0DD /* HealthTimerCellView_Previews.swift */; };
+		DCF7CEED292519B2006FD0DD /* HealthTimerSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEEC292519B2006FD0DD /* HealthTimerSetupView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCF7CEB429251374006FD0DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCF7CEA629251373006FD0DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCF7CEB129251374006FD0DD;
+			remoteInfo = "HealthTimer2 Watch App";
+		};
+		DCF7CEC529251376006FD0DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCF7CEA629251373006FD0DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCF7CEB129251374006FD0DD;
+			remoteInfo = "HealthTimer2 Watch App";
+		};
+		DCF7CECF29251376006FD0DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCF7CEA629251373006FD0DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCF7CEB129251374006FD0DD;
+			remoteInfo = "HealthTimer2 Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCF7CEDB29251376006FD0DD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DCF7CEB329251374006FD0DD /* HealthTimer Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DCF7CEAC29251374006FD0DD /* HealthTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF7CEB229251374006FD0DD /* HealthTimer Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthTimer Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF7CEB729251374006FD0DD /* HealthTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimerApp.swift; sourceTree = "<group>"; };
+		DCF7CEB929251374006FD0DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DCF7CEBB29251376006FD0DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCF7CEBE29251376006FD0DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DCF7CEC429251376006FD0DD /* HealthTimer Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HealthTimer Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF7CEC829251376006FD0DD /* HealthTimer2_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimer2_Watch_AppTests.swift; sourceTree = "<group>"; };
+		DCF7CECE29251376006FD0DD /* HealthTimer Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HealthTimer Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF7CED229251376006FD0DD /* HealthTimer2_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimer2_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		DCF7CED429251376006FD0DD /* HealthTimer2_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimer2_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DCF7CEE52925139F006FD0DD /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
+		DCF7CEE82925141C006FD0DD /* HealthTimerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimerCellView.swift; sourceTree = "<group>"; };
+		DCF7CEEA292515B9006FD0DD /* HealthTimerCellView_Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimerCellView_Previews.swift; sourceTree = "<group>"; };
+		DCF7CEEC292519B2006FD0DD /* HealthTimerSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimerSetupView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCF7CEAF29251374006FD0DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF7CEC129251376006FD0DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF7CECB29251376006FD0DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCF7CEA529251373006FD0DD = {
+			isa = PBXGroup;
+			children = (
+				DCF7CEB629251374006FD0DD /* HealthTimer2 Watch App */,
+				DCF7CEC729251376006FD0DD /* HealthTimer2 Watch AppTests */,
+				DCF7CED129251376006FD0DD /* HealthTimer2 Watch AppUITests */,
+				DCF7CEAD29251374006FD0DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCF7CEAD29251374006FD0DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCF7CEAC29251374006FD0DD /* HealthTimer.app */,
+				DCF7CEB229251374006FD0DD /* HealthTimer Watch App.app */,
+				DCF7CEC429251376006FD0DD /* HealthTimer Watch AppTests.xctest */,
+				DCF7CECE29251376006FD0DD /* HealthTimer Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCF7CEB629251374006FD0DD /* HealthTimer2 Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				DCF7CEE7292513F6006FD0DD /* model */,
+				DCF7CEB729251374006FD0DD /* HealthTimerApp.swift */,
+				DCF7CEE82925141C006FD0DD /* HealthTimerCellView.swift */,
+				DCF7CEEC292519B2006FD0DD /* HealthTimerSetupView.swift */,
+				DCF7CEEA292515B9006FD0DD /* HealthTimerCellView_Previews.swift */,
+				DCF7CEB929251374006FD0DD /* ContentView.swift */,
+				DCF7CEBB29251376006FD0DD /* Assets.xcassets */,
+				DCF7CEBD29251376006FD0DD /* Preview Content */,
+			);
+			path = "HealthTimer2 Watch App";
+			sourceTree = "<group>";
+		};
+		DCF7CEBD29251376006FD0DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DCF7CEBE29251376006FD0DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCF7CEC729251376006FD0DD /* HealthTimer2 Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCF7CEC829251376006FD0DD /* HealthTimer2_Watch_AppTests.swift */,
+			);
+			path = "HealthTimer2 Watch AppTests";
+			sourceTree = "<group>";
+		};
+		DCF7CED129251376006FD0DD /* HealthTimer2 Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCF7CED229251376006FD0DD /* HealthTimer2_Watch_AppUITests.swift */,
+				DCF7CED429251376006FD0DD /* HealthTimer2_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "HealthTimer2 Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		DCF7CEE7292513F6006FD0DD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DCF7CEE52925139F006FD0DD /* TimeModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCF7CEAB29251374006FD0DD /* HealthTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCF7CEDC29251376006FD0DD /* Build configuration list for PBXNativeTarget "HealthTimer" */;
+			buildPhases = (
+				DCF7CEAA29251374006FD0DD /* Resources */,
+				DCF7CEDB29251376006FD0DD /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCF7CEB529251374006FD0DD /* PBXTargetDependency */,
+			);
+			name = HealthTimer;
+			productName = HealthTimer2;
+			productReference = DCF7CEAC29251374006FD0DD /* HealthTimer.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		DCF7CEB129251374006FD0DD /* HealthTimer Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCF7CED829251376006FD0DD /* Build configuration list for PBXNativeTarget "HealthTimer Watch App" */;
+			buildPhases = (
+				DCF7CEAE29251374006FD0DD /* Sources */,
+				DCF7CEAF29251374006FD0DD /* Frameworks */,
+				DCF7CEB029251374006FD0DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HealthTimer Watch App";
+			productName = "HealthTimer2 Watch App";
+			productReference = DCF7CEB229251374006FD0DD /* HealthTimer Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCF7CEC329251376006FD0DD /* HealthTimer Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCF7CEDF29251376006FD0DD /* Build configuration list for PBXNativeTarget "HealthTimer Watch AppTests" */;
+			buildPhases = (
+				DCF7CEC029251376006FD0DD /* Sources */,
+				DCF7CEC129251376006FD0DD /* Frameworks */,
+				DCF7CEC229251376006FD0DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCF7CEC629251376006FD0DD /* PBXTargetDependency */,
+			);
+			name = "HealthTimer Watch AppTests";
+			productName = "HealthTimer2 Watch AppTests";
+			productReference = DCF7CEC429251376006FD0DD /* HealthTimer Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCF7CECD29251376006FD0DD /* HealthTimer Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCF7CEE229251376006FD0DD /* Build configuration list for PBXNativeTarget "HealthTimer Watch AppUITests" */;
+			buildPhases = (
+				DCF7CECA29251376006FD0DD /* Sources */,
+				DCF7CECB29251376006FD0DD /* Frameworks */,
+				DCF7CECC29251376006FD0DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCF7CED029251376006FD0DD /* PBXTargetDependency */,
+			);
+			name = "HealthTimer Watch AppUITests";
+			productName = "HealthTimer2 Watch AppUITests";
+			productReference = DCF7CECE29251376006FD0DD /* HealthTimer Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCF7CEA629251373006FD0DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					DCF7CEAB29251374006FD0DD = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					DCF7CEB129251374006FD0DD = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					DCF7CEC329251376006FD0DD = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = DCF7CEB129251374006FD0DD;
+					};
+					DCF7CECD29251376006FD0DD = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = DCF7CEB129251374006FD0DD;
+					};
+				};
+			};
+			buildConfigurationList = DCF7CEA929251373006FD0DD /* Build configuration list for PBXProject "HealthTimer2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCF7CEA529251373006FD0DD;
+			productRefGroup = DCF7CEAD29251374006FD0DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCF7CEAB29251374006FD0DD /* HealthTimer */,
+				DCF7CEB129251374006FD0DD /* HealthTimer Watch App */,
+				DCF7CEC329251376006FD0DD /* HealthTimer Watch AppTests */,
+				DCF7CECD29251376006FD0DD /* HealthTimer Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCF7CEAA29251374006FD0DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF7CEB029251374006FD0DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF7CEBF29251376006FD0DD /* Preview Assets.xcassets in Resources */,
+				DCF7CEBC29251376006FD0DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF7CEC229251376006FD0DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF7CECC29251376006FD0DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCF7CEAE29251374006FD0DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF7CEBA29251374006FD0DD /* ContentView.swift in Sources */,
+				DCF7CEEB292515B9006FD0DD /* HealthTimerCellView_Previews.swift in Sources */,
+				DCF7CEE62925139F006FD0DD /* TimeModel.swift in Sources */,
+				DCF7CEE92925141C006FD0DD /* HealthTimerCellView.swift in Sources */,
+				DCF7CEED292519B2006FD0DD /* HealthTimerSetupView.swift in Sources */,
+				DCF7CEB829251374006FD0DD /* HealthTimerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF7CEC029251376006FD0DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF7CEC929251376006FD0DD /* HealthTimer2_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF7CECA29251376006FD0DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF7CED329251376006FD0DD /* HealthTimer2_Watch_AppUITests.swift in Sources */,
+				DCF7CED529251376006FD0DD /* HealthTimer2_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCF7CEB529251374006FD0DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCF7CEB129251374006FD0DD /* HealthTimer Watch App */;
+			targetProxy = DCF7CEB429251374006FD0DD /* PBXContainerItemProxy */;
+		};
+		DCF7CEC629251376006FD0DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCF7CEB129251374006FD0DD /* HealthTimer Watch App */;
+			targetProxy = DCF7CEC529251376006FD0DD /* PBXContainerItemProxy */;
+		};
+		DCF7CED029251376006FD0DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCF7CEB129251374006FD0DD /* HealthTimer Watch App */;
+			targetProxy = DCF7CECF29251376006FD0DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DCF7CED629251376006FD0DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCF7CED729251376006FD0DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DCF7CED929251376006FD0DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HealthTimer2 Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = AF3TFU2C7A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HealthTimer2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhyoon.HealthTimer2.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		DCF7CEDA29251376006FD0DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HealthTimer2 Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = AF3TFU2C7A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HealthTimer2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhyoon.HealthTimer2.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		DCF7CEDD29251376006FD0DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AF3TFU2C7A;
+				INFOPLIST_KEY_CFBundleDisplayName = HealthTimer2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhyoon.HealthTimer2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DCF7CEDE29251376006FD0DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AF3TFU2C7A;
+				INFOPLIST_KEY_CFBundleDisplayName = HealthTimer2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhyoon.HealthTimer2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCF7CEE029251376006FD0DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AF3TFU2C7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jhyoon.HealthTimer2-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthTimer2 Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HealthTimer2 Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		DCF7CEE129251376006FD0DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AF3TFU2C7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jhyoon.HealthTimer2-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthTimer2 Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HealthTimer2 Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		DCF7CEE329251376006FD0DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AF3TFU2C7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jhyoon.HealthTimer2-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "HealthTimer2 Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		DCF7CEE429251376006FD0DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AF3TFU2C7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jhyoon.HealthTimer2-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "HealthTimer2 Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCF7CEA929251373006FD0DD /* Build configuration list for PBXProject "HealthTimer2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF7CED629251376006FD0DD /* Debug */,
+				DCF7CED729251376006FD0DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCF7CED829251376006FD0DD /* Build configuration list for PBXNativeTarget "HealthTimer Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF7CED929251376006FD0DD /* Debug */,
+				DCF7CEDA29251376006FD0DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCF7CEDC29251376006FD0DD /* Build configuration list for PBXNativeTarget "HealthTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF7CEDD29251376006FD0DD /* Debug */,
+				DCF7CEDE29251376006FD0DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCF7CEDF29251376006FD0DD /* Build configuration list for PBXNativeTarget "HealthTimer Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF7CEE029251376006FD0DD /* Debug */,
+				DCF7CEE129251376006FD0DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCF7CEE229251376006FD0DD /* Build configuration list for PBXNativeTarget "HealthTimer Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF7CEE329251376006FD0DD /* Debug */,
+				DCF7CEE429251376006FD0DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCF7CEA629251373006FD0DD /* Project object */;
+}
