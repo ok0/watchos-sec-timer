@@ -11,8 +11,7 @@ struct ContentView: View {
     let timeModels: [TimeModel] = [
         TimeModel(second: 55),
         TimeModel(second: 90),
-        TimeModel(second: 30),
-        TimeModel(second: 3)
+        TimeModel(second: 30)
     ]
     var didPrefix = "You Did : "
     @State private var did: Int8 = 0
