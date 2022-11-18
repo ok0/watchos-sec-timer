@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		DC82A83F2925EC3F0084CBB4 /* WatchKit.framework in Sources */ = {isa = PBXBuildFile; fileRef = DC82A83A2925EBFB0084CBB4 /* WatchKit.framework */; };
 		DC82A845292600C00084CBB4 /* SessionExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82A844292600C00084CBB4 /* SessionExtend.swift */; };
+		DC82A84B292621470084CBB4 /* AbstractModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82A84A292621470084CBB4 /* AbstractModel.swift */; };
 		DCF7CEB329251374006FD0DD /* HealthTimer Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DCF7CEB229251374006FD0DD /* HealthTimer Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DCF7CEB829251374006FD0DD /* HealthTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEB729251374006FD0DD /* HealthTimerApp.swift */; };
-		DCF7CEBA29251374006FD0DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEB929251374006FD0DD /* ContentView.swift */; };
+		DCF7CEBA29251374006FD0DD /* HealthTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEB929251374006FD0DD /* HealthTimerView.swift */; };
 		DCF7CEBC29251376006FD0DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF7CEBB29251376006FD0DD /* Assets.xcassets */; };
 		DCF7CEBF29251376006FD0DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF7CEBE29251376006FD0DD /* Preview Assets.xcassets */; };
 		DCF7CEC929251376006FD0DD /* HealthTimer2_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEC829251376006FD0DD /* HealthTimer2_Watch_AppTests.swift */; };
@@ -19,7 +20,6 @@
 		DCF7CED529251376006FD0DD /* HealthTimer2_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CED429251376006FD0DD /* HealthTimer2_Watch_AppUITestsLaunchTests.swift */; };
 		DCF7CEE62925139F006FD0DD /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEE52925139F006FD0DD /* TimeModel.swift */; };
 		DCF7CEE92925141C006FD0DD /* HealthTimerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEE82925141C006FD0DD /* HealthTimerCellView.swift */; };
-		DCF7CEEB292515B9006FD0DD /* HealthTimerCellView_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEEA292515B9006FD0DD /* HealthTimerCellView_Previews.swift */; };
 		DCF7CEED292519B2006FD0DD /* HealthTimerSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEEC292519B2006FD0DD /* HealthTimerSetupView.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,10 +66,11 @@
 		DC82A8412925F0580084CBB4 /* HealthTimer Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HealthTimer Watch App.entitlements"; sourceTree = "<group>"; };
 		DC82A8422925F0620084CBB4 /* HealthTimer-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "HealthTimer-Watch-App-Info.plist"; sourceTree = "<group>"; };
 		DC82A844292600C00084CBB4 /* SessionExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionExtend.swift; sourceTree = "<group>"; };
+		DC82A84A292621470084CBB4 /* AbstractModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractModel.swift; sourceTree = "<group>"; };
 		DCF7CEAC29251374006FD0DD /* HealthTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF7CEB229251374006FD0DD /* HealthTimer Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthTimer Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF7CEB729251374006FD0DD /* HealthTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimerApp.swift; sourceTree = "<group>"; };
-		DCF7CEB929251374006FD0DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DCF7CEB929251374006FD0DD /* HealthTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimerView.swift; sourceTree = "<group>"; };
 		DCF7CEBB29251376006FD0DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCF7CEBE29251376006FD0DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DCF7CEC429251376006FD0DD /* HealthTimer Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HealthTimer Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +80,6 @@
 		DCF7CED429251376006FD0DD /* HealthTimer2_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimer2_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DCF7CEE52925139F006FD0DD /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 		DCF7CEE82925141C006FD0DD /* HealthTimerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimerCellView.swift; sourceTree = "<group>"; };
-		DCF7CEEA292515B9006FD0DD /* HealthTimerCellView_Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimerCellView_Previews.swift; sourceTree = "<group>"; };
 		DCF7CEEC292519B2006FD0DD /* HealthTimerSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimerSetupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,10 +154,9 @@
 				DC82A8432926009C0084CBB4 /* lib */,
 				DCF7CEE7292513F6006FD0DD /* model */,
 				DCF7CEB729251374006FD0DD /* HealthTimerApp.swift */,
+				DCF7CEB929251374006FD0DD /* HealthTimerView.swift */,
 				DCF7CEE82925141C006FD0DD /* HealthTimerCellView.swift */,
 				DCF7CEEC292519B2006FD0DD /* HealthTimerSetupView.swift */,
-				DCF7CEEA292515B9006FD0DD /* HealthTimerCellView_Previews.swift */,
-				DCF7CEB929251374006FD0DD /* ContentView.swift */,
 				DCF7CEBB29251376006FD0DD /* Assets.xcassets */,
 				DCF7CEBD29251376006FD0DD /* Preview Content */,
 			);
@@ -193,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				DCF7CEE52925139F006FD0DD /* TimeModel.swift */,
+				DC82A84A292621470084CBB4 /* AbstractModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -356,13 +356,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC82A83F2925EC3F0084CBB4 /* WatchKit.framework in Sources */,
-				DCF7CEBA29251374006FD0DD /* ContentView.swift in Sources */,
+				DCF7CEBA29251374006FD0DD /* HealthTimerView.swift in Sources */,
 				DC82A845292600C00084CBB4 /* SessionExtend.swift in Sources */,
-				DCF7CEEB292515B9006FD0DD /* HealthTimerCellView_Previews.swift in Sources */,
 				DCF7CEE62925139F006FD0DD /* TimeModel.swift in Sources */,
 				DCF7CEE92925141C006FD0DD /* HealthTimerCellView.swift in Sources */,
 				DCF7CEED292519B2006FD0DD /* HealthTimerSetupView.swift in Sources */,
 				DCF7CEB829251374006FD0DD /* HealthTimerApp.swift in Sources */,
+				DC82A84B292621470084CBB4 /* AbstractModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,7 +526,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "HealthTimer-Watch-App-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = HealthTimer2;
+				INFOPLIST_KEY_CFBundleDisplayName = "몸짱종훈";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -558,7 +558,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "HealthTimer-Watch-App-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = HealthTimer2;
+				INFOPLIST_KEY_CFBundleDisplayName = "몸짱종훈";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (

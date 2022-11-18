@@ -8,34 +8,60 @@
 import SwiftUI
 
 struct HealthTimerSetupView: View {
-    @State var second: Int
-    let cancel: () -> Void
+    @State var second: Int8
+    @Binding var didInContentView: Int8
     let done: () -> Void
     
     var body: some View {
         VStack {
-            if second > 0 {
-                Text("").onAppear() { startTimer() }
-                Text("\(second)").bold().font(.system(size: 90)).foregroundColor(.red)
+            if isWating() {
+                Text("\(HealthTimerViewConstants.didPrefix) \(didInContentView + 1)")
+                    .onAppear{
+                        start()
+                    }
+                
+                Text("\(second)")
+                    .bold()
+                    .font(.system(size: 70))
+                    .foregroundColor(.red)
                 Text(" sec.")
-//                 to-do
-//                Button("Cancel.") { cancel() }.bold().font(.system(size: 20)).foregroundColor(.red)
+                    .bold()
             } else {
-//                 to-do
-//                Button("Done !") { done() }.bold().font(.system(size: 50)).foregroundColor(.white)
-                Text("Done !").bold().font(.system(size: 50)).foregroundColor(.white)
+                Text("Done !")
+                    .onAppear() {
+                        done()
+                    }
+                    .bold()
+                    .font(.system(size: 50))
+                    .foregroundColor(.white)
             }
         }
     }
     
-    func startTimer() {
+    private func isWating() -> Bool {
+        return (second > 0)
+    }
+    
+    private func start() {
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-            if second > 0 {
+            if isWating() {
                 second -= 1
             } else {
                 WKInterfaceDevice.current().play(.notification)
                 timer.invalidate()
             }
         }
+    }
+}
+
+struct HealthTimerSetupView_Previews: PreviewProvider {
+    @State private static var did: Int8 = 0
+    
+    static var previews: some View {
+        HealthTimerSetupView(
+            second: 3,
+            didInContentView: $did,
+            done: {}
+        )
     }
 }

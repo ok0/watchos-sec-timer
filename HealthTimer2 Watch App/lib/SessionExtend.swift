@@ -19,4 +19,10 @@ class SessionExtend: NSObject, ObservableObject {
         session = WKExtendedRuntimeSession()
         session.start(at: Date())
     }
+    
+    func stopSession() {
+        if session.state == .running {
+            session.invalidate()
+        }
+    }
 }

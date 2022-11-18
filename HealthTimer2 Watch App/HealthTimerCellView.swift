@@ -17,3 +17,9 @@ struct HealthTimerCellView: View {
         .padding(16)
     }
 }
+
+struct HealthTimerCellView_Previews: PreviewProvider {
+    static var previews: some View {
+        HealthTimerCellView(timeModel: TimeModel(second: 30))
+    }
+}

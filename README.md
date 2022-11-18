@@ -3,5 +3,5 @@
 - WatchOS 9, Apple Watch 5 44mm
 - 초 단위 타이머
 
-![ezgif-5-742ae76dd0](https://user-images.githubusercontent.com/39591419/202371876-e81131a8-6c4b-4473-846d-72c9f735807b.gif)
+![ezgif-3-332c17e7cf](https://user-images.githubusercontent.com/39591419/202396299-45f6a329-a722-4190-b830-50b577bac332.gif)
 
