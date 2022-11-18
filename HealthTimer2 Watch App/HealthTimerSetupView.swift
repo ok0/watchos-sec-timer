@@ -15,11 +15,11 @@ struct HealthTimerSetupView: View {
     var body: some View {
         VStack {
             if isWating() {
-                Text("\(ContentViewConstants.didPrefix) \(didInContentView + 1)")
+                Text("\(HealthTimerViewConstants.didPrefix) \(didInContentView + 1)")
+                    .onAppear{
+                        start()
+                    }
                 
-                Text("")
-                    .bold()
-                    .onAppear() { start() }
                 Text("\(second)")
                     .bold()
                     .font(.system(size: 70))
@@ -29,7 +29,7 @@ struct HealthTimerSetupView: View {
             } else {
                 Text("Done !")
                     .onAppear() {
-                        done() // todo
+                        done()
                     }
                     .bold()
                     .font(.system(size: 50))

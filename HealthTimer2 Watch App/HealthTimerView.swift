@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentViewConstants {
+struct HealthTimerViewConstants {
     static let didPrefix = "You Did "
     static let timeModels: [TimeModel] = [
         TimeModel(second: 55),
@@ -17,21 +17,17 @@ struct ContentViewConstants {
     ]
 }
 
-struct ContentView: View {
+struct HealthTimerView: View {
     @State private var did: Int8 = 0
-    
-    init() {
-        SessionExtend.shared.startSession()
-    }
     
     var body: some View {
         NavigationStack {
             Button(
-                "\(ContentViewConstants.didPrefix) \(did) !"
+                "\(HealthTimerViewConstants.didPrefix) \(did) !"
             ) { did = 0 }.foregroundColor(.green)
             
             List {
-                ForEach(ContentViewConstants.timeModels) { timeModel in
+                ForEach(HealthTimerViewConstants.timeModels) { timeModel in
                     NavigationLink(
                         destination: HealthTimerSetupView(
                             second: timeModel.second,
@@ -47,8 +43,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HealthTimerView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HealthTimerView()
     }
 }
