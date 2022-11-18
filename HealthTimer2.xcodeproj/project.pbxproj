@@ -20,7 +20,6 @@
 		DCF7CED529251376006FD0DD /* HealthTimer2_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CED429251376006FD0DD /* HealthTimer2_Watch_AppUITestsLaunchTests.swift */; };
 		DCF7CEE62925139F006FD0DD /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEE52925139F006FD0DD /* TimeModel.swift */; };
 		DCF7CEE92925141C006FD0DD /* HealthTimerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEE82925141C006FD0DD /* HealthTimerCellView.swift */; };
-		DCF7CEEB292515B9006FD0DD /* HealthTimerCellView_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEEA292515B9006FD0DD /* HealthTimerCellView_Previews.swift */; };
 		DCF7CEED292519B2006FD0DD /* HealthTimerSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7CEEC292519B2006FD0DD /* HealthTimerSetupView.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +80,6 @@
 		DCF7CED429251376006FD0DD /* HealthTimer2_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimer2_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DCF7CEE52925139F006FD0DD /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 		DCF7CEE82925141C006FD0DD /* HealthTimerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimerCellView.swift; sourceTree = "<group>"; };
-		DCF7CEEA292515B9006FD0DD /* HealthTimerCellView_Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimerCellView_Previews.swift; sourceTree = "<group>"; };
 		DCF7CEEC292519B2006FD0DD /* HealthTimerSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTimerSetupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,10 +154,9 @@
 				DC82A8432926009C0084CBB4 /* lib */,
 				DCF7CEE7292513F6006FD0DD /* model */,
 				DCF7CEB729251374006FD0DD /* HealthTimerApp.swift */,
+				DCF7CEB929251374006FD0DD /* ContentView.swift */,
 				DCF7CEE82925141C006FD0DD /* HealthTimerCellView.swift */,
 				DCF7CEEC292519B2006FD0DD /* HealthTimerSetupView.swift */,
-				DCF7CEEA292515B9006FD0DD /* HealthTimerCellView_Previews.swift */,
-				DCF7CEB929251374006FD0DD /* ContentView.swift */,
 				DCF7CEBB29251376006FD0DD /* Assets.xcassets */,
 				DCF7CEBD29251376006FD0DD /* Preview Content */,
 			);
@@ -361,7 +358,6 @@
 				DC82A83F2925EC3F0084CBB4 /* WatchKit.framework in Sources */,
 				DCF7CEBA29251374006FD0DD /* ContentView.swift in Sources */,
 				DC82A845292600C00084CBB4 /* SessionExtend.swift in Sources */,
-				DCF7CEEB292515B9006FD0DD /* HealthTimerCellView_Previews.swift in Sources */,
 				DCF7CEE62925139F006FD0DD /* TimeModel.swift in Sources */,
 				DCF7CEE92925141C006FD0DD /* HealthTimerCellView.swift in Sources */,
 				DCF7CEED292519B2006FD0DD /* HealthTimerSetupView.swift in Sources */,
