@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class SessionExtend: NSObject, ObservableObject {
+class SessionExtend: NSObject, ObservableObject, WKExtendedRuntimeSessionDelegate {
     static public let shared = SessionExtend()
     private var session = WKExtendedRuntimeSession()
     
@@ -17,6 +17,7 @@ class SessionExtend: NSObject, ObservableObject {
         }
         
         session = WKExtendedRuntimeSession()
+        session.delegate = self
         session.start(at: Date())
     }
     
@@ -25,4 +26,10 @@ class SessionExtend: NSObject, ObservableObject {
             session.invalidate()
         }
     }
+    
+    func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, didInvalidateWith reason: WKExtendedRuntimeSessionInvalidationReason, error: Error?) { }
+    
+    func extendedRuntimeSessionDidStart(_ extendedRuntimeSession: WKExtendedRuntimeSession) { }
+    
+    func extendedRuntimeSessionWillExpire(_ extendedRuntimeSession: WKExtendedRuntimeSession) { }
 }

@@ -37,7 +37,6 @@ struct HealthTimerSetupView: View {
             }
         }
     }
-    
     private func isWating() -> Bool {
         return (second > 0)
     }
