@@ -8,48 +8,81 @@
 import SwiftUI
 
 struct HealthTimerSetupView: View {
-    @State var second: Int8
+    var second: Int8
+    @State var remaning: Int8
     @Binding var didInContentView: Int8
     let done: () -> Void
+    @State private var timer: Timer?
+    
+    init (second: Int8, didInContentView: Binding<Int8>, done: @escaping () -> Void) {
+        self.second = second
+        self.remaning = second
+        self._didInContentView = didInContentView
+        self.done = done
+    }
     
     var body: some View {
         VStack {
-            if isWating() {
+            if isFinised() {
+                ing()
+            } else {
                 Text("\(HealthTimerViewConstants.didPrefix) \(didInContentView + 1)")
                     .onAppear{
                         start()
                     }
                 
-                Text("\(second)")
+                Text("Rest for \(second) sec.")
+                    .bold()
+                    .foregroundColor(.red)
+                
+                Text("\(remaning)")
                     .bold()
                     .font(.system(size: 70))
                     .foregroundColor(.red)
                 Text(" sec.")
                     .bold()
-            } else {
-                Text("Done !")
-                    .onAppear() {
-                        done()
-                    }
-                    .bold()
-                    .font(.system(size: 50))
-                    .foregroundColor(.white)
             }
-        }
+        }.onDisappear{ finish() }
     }
-    private func isWating() -> Bool {
-        return (second > 0)
+    
+    private func ing() -> some View {
+        Text("Done !")
+            .onAppear() {
+                done()
+            }
+            .bold()
+            .font(.system(size: 50))
+            .foregroundColor(.white)
     }
     
     private func start() {
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-            if isWating() {
-                second -= 1
+        SessionExtend.shared.startSession()
+        
+        timer = Timer.scheduledTimer(
+            withTimeInterval: 1,
+            repeats: true
+        ) { _ in
+            if isFinised() {
+                finish()
             } else {
-                WKInterfaceDevice.current().play(.notification)
-                timer.invalidate()
+                remaning -= 1
             }
         }
+    }
+    
+    private func isFinised() -> Bool {
+        return remaning == 0
+    }
+    
+    func finish() {
+        if isFinised() {
+            WKInterfaceDevice.current().play(.notification)
+        }
+        
+        timer?.invalidate()
+        timer = nil
+        
+        SessionExtend.shared.stopSession()
     }
 }
 
