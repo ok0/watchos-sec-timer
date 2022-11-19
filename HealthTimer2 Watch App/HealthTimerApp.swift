@@ -12,8 +12,6 @@ struct HealthTimer2_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
             HealthTimerView()
-//                .onAppear{ SessionExtend.shared.startSession() }
-//                .onDisappear{ SessionExtend.shared.stopSession() }
         }
     }
 }
