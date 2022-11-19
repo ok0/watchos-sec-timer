@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HealthTimerCellView: View {
     let timeModel: TimeModel
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(timeModel.name)

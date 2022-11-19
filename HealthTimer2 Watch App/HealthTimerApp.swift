@@ -9,10 +9,6 @@ import SwiftUI
 
 @main
 struct HealthTimer2_Watch_AppApp: App {
-    init() {
-        SessionExtend.shared.startSession()
-    }
-    
     var body: some Scene {
         WindowGroup {
             HealthTimerView()

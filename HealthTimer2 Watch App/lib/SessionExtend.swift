@@ -7,22 +7,41 @@
 
 import SwiftUI
 
-class SessionExtend: NSObject, ObservableObject {
+class SessionExtend: NSObject, ObservableObject, WKExtendedRuntimeSessionDelegate {
     static public let shared = SessionExtend()
     private var session = WKExtendedRuntimeSession()
     
+    private func isRunningSession() -> Bool {
+        return session.state == .running || session.state == .scheduled
+    }
+    
     func startSession() {
-        if session.state == .running {
+        if isRunningSession() {
             return
         }
         
         session = WKExtendedRuntimeSession()
+        session.delegate = self
         session.start(at: Date())
     }
     
     func stopSession() {
-        if session.state == .running {
+        if isRunningSession() {
             session.invalidate()
         }
     }
+    
+    func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, didInvalidateWith reason: WKExtendedRuntimeSessionInvalidationReason, error: Error?) {
+        if reason != .none {
+            print("======================================================")
+            print("session error occurred!")
+            print("reason.rawValue, \(reason.rawValue)")
+            print("error.debugDescription, \(error.debugDescription)")
+            print("======================================================")
+        }
+    }
+    
+    func extendedRuntimeSessionDidStart(_ extendedRuntimeSession: WKExtendedRuntimeSession) { }
+    
+    func extendedRuntimeSessionWillExpire(_ extendedRuntimeSession: WKExtendedRuntimeSession) { }
 }

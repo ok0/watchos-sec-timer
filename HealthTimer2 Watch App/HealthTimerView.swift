@@ -18,7 +18,7 @@ struct HealthTimerViewConstants {
 }
 
 struct HealthTimerView: View {
-    @State private var did: Int8 = 0
+    @State var did: Int8 = 0
     
     var body: some View {
         NavigationStack {
@@ -28,17 +28,17 @@ struct HealthTimerView: View {
             
             List {
                 ForEach(HealthTimerViewConstants.timeModels) { timeModel in
-                    NavigationLink(
-                        destination: HealthTimerSetupView(
-                            second: timeModel.second,
-                            didInContentView: $did,
-                            done: { did = did + 1 } // todo
-                        )
-                    ) {
-                        HealthTimerCellView(timeModel: timeModel)
-                    }
-                }
-            }
+                   NavigationLink(
+                       destination: HealthTimerSetupView(
+                           second: timeModel.second,
+                           didInContentView: $did,
+                           done: { did += 1 } // todo
+                       )
+                   ) {
+                       HealthTimerCellView(timeModel: timeModel)
+                   }
+               }
+           }
         }
     }
 }
