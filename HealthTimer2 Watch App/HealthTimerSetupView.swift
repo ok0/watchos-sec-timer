@@ -13,6 +13,7 @@ struct HealthTimerSetupView: View {
     @Binding var didInContentView: Int8
     let done: () -> Void
     @State private var timer: Timer?
+    @State private var finished = false
     
     init (second: Int8, didInContentView: Binding<Int8>, done: @escaping () -> Void) {
         self.second = second
@@ -75,8 +76,12 @@ struct HealthTimerSetupView: View {
     }
     
     func finish() {
-        if isFinised() {
+        if (!finished) {
             WKInterfaceDevice.current().play(.notification)
+        }
+        
+        if isFinised() {
+            finished = true
         }
         
         timer?.invalidate()
