@@ -3,7 +3,7 @@
 //  HealthTimer2 Watch App
 //
 //  Created by 윤종훈 on 2022/11/16.
-//
+//  todo:: 2022-11-19, 구조 다시 잡는다
 
 import SwiftUI
 
@@ -25,7 +25,13 @@ struct HealthTimerSetupView: View {
     var body: some View {
         VStack {
             if isFinised() {
-                ing()
+                Text("Done !")
+                    .onAppear() {
+                        done()
+                    }
+                    .bold()
+                    .font(.system(size: 50))
+                    .foregroundColor(.white)
             } else {
                 Text("\(HealthTimerViewConstants.didPrefix) \(didInContentView + 1)")
                     .onAppear{
@@ -44,16 +50,6 @@ struct HealthTimerSetupView: View {
                     .bold()
             }
         }.onDisappear{ finish() }
-    }
-    
-    private func ing() -> some View {
-        Text("Done !")
-            .onAppear() {
-                done()
-            }
-            .bold()
-            .font(.system(size: 50))
-            .foregroundColor(.white)
     }
     
     private func start() {
